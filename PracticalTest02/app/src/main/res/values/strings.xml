@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PracticalTest02</string>
+    <string name="server_text">Server</string>
+    <string name="client_text">Client</string>
+    <string name="connect_text">Connect</string>
+    <string name="port_placeholder">Port</string>
+    <string name="address_placeholder">Address</string>
+    <string name="value_text">Get Bitcoin Value</string>
+    <string-array name="information_types">
+        <item>USD</item>
+        <item>EUR</item>
+    </string-array>
+</resources>

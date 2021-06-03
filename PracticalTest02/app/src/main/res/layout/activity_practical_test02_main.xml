@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PracticalTest02MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/server_text"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/server_name" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/server_name"
+        android:text="@string/port_placeholder"
+        android:id="@+id/port_name"
+        android:layout_marginRight="250dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/server_name"
+        android:layout_toRightOf="@+id/port_name"
+        android:id="@+id/connect_button"
+        android:text="@string/connect_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/client_text"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/port_name"
+        android:id="@+id/client_name"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/client_name"
+        android:text="@string/address_placeholder"
+        android:id="@+id/address_name"
+        android:layout_marginRight="250dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/client_name"
+        android:layout_toRightOf="@+id/address_name"
+        android:text="@string/port_placeholder"
+        android:id="@+id/port_data" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/port_data"
+        android:layout_toRightOf="@+id/information_type_spinner"
+        android:id="@+id/value_button"
+        android:text="@string/value_text" />
+
+    <Spinner
+        android:id="@+id/information_type_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/information_types"
+        android:layout_below="@id/address_name" />
+
+    <TextView
+        android:id="@+id/value_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/information_type_spinner"
+        android:maxLines="10"/>
+
+</RelativeLayout>
